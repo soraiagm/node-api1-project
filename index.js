@@ -7,6 +7,10 @@ const server = express();
 
 server.use(express.json());
 
+const cors = require('cors'); ///this was not given in project READ.ME
+
+server.use(cors());
+
 
 // POST // create a User
 server.post('/api/users', (request, response) => {
